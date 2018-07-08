@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginRight="5dp"
+    card_view:cardCornerRadius="5dp"
+    android:id="@+id/card">
+
+    <com.daimajia.swipe.SwipeLayout xmlns:swipe="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/swipe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        swipe:leftEdgeSwipeOffset="0dp"
+        swipe:rightEdgeSwipeOffset="0dp">
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/bottom_wrapper"-->
+            <!--android:layout_width="80dp"-->
+            <!--android:layout_height="150dp"-->
+            <!--android:background="#046a01"-->
+            <!--android:gravity="center"-->
+            <!--android:tag="Bottom2">-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/edit"-->
+                <!--android:layout_width="80dp"-->
+                <!--android:layout_height="150dp"-->
+                <!--android:src="@drawable/edit" />-->
+        <!--</LinearLayout>-->
+
+        <LinearLayout
+            android:id="@+id/bottom_wrapper2"
+            android:layout_width="80dp"
+            android:layout_height="150dp"
+            android:background="#ff0000"
+            android:gravity="center"
+            android:tag="Bottom2">
+
+            <ImageView
+                android:id="@+id/trash"
+                android:layout_width="80dp"
+                android:layout_height="150dp"
+                android:src="@drawable/edit_copy" />
+        </LinearLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/cardLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/servicesPic"
+                android:layout_width="130dp"
+                android:layout_height="150dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                card_view:layout_constraintBottom_toBottomOf="parent"
+                card_view:layout_constraintStart_toStartOf="parent"
+                card_view:layout_constraintTop_toTopOf="parent"
+                card_view:layout_constraintVertical_bias="0.38"
+                card_view:srcCompat="@android:drawable/btn_star_big_on"
+                swipe:layout_constraintEnd_toStartOf="@+id/divider" />
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="20dp"
+                android:layout_height="23dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginBottom="8dp"
+                card_view:srcCompat="@drawable/star_copy_31"
+                swipe:layout_constraintBottom_toTopOf="@+id/myServiceName"
+                swipe:layout_constraintEnd_toStartOf="@+id/totalRate"
+                swipe:layout_constraintStart_toEndOf="@+id/servicesPic"
+                swipe:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/totalRate"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="sans-serif-light"
+                android:letterSpacing="0.01"
+                android:lineSpacingExtra="-8.7sp"
+                android:text="4.9"
+                android:textColor="@color/goldenrod"
+                android:textSize="16.7sp"
+                android:textStyle="normal"
+                swipe:layout_constraintBottom_toTopOf="@+id/myServiceName"
+                swipe:layout_constraintEnd_toStartOf="@+id/idd"
+                swipe:layout_constraintStart_toEndOf="@+id/imageView9"
+                swipe:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/idd"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginStart="23dp"
+                android:layout_marginLeft="23dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="123dp"
+                android:layout_marginRight="123dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="sans-serif-light"
+                android:letterSpacing="0.01"
+                android:lineSpacingExtra="-8.7sp"
+                android:text="(20)"
+                android:textColor="#444444"
+                android:textSize="16.7sp"
+                android:textStyle="normal"
+                swipe:layout_constraintBottom_toTopOf="@+id/myServiceName"
+                swipe:layout_constraintEnd_toEndOf="parent"
+                swipe:layout_constraintStart_toEndOf="@+id/totalRate"
+                swipe:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/myServiceName"
+                android:layout_width="0dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="23dp"
+                android:layout_marginRight="23dp"
+                android:layout_marginBottom="7dp"
+                android:fontFamily="sans-serif-light"
+                android:letterSpacing="0.01"
+                android:lineSpacingExtra="-0.3sp"
+                android:text="Do 2 modern and eye catching logo design"
+                android:textColor="#000000"
+                android:textSize="16.7sp"
+                android:textStyle="normal"
+                swipe:layout_constraintBottom_toTopOf="@+id/divider"
+                swipe:layout_constraintEnd_toEndOf="parent"
+                swipe:layout_constraintStart_toEndOf="@+id/servicesPic"
+                swipe:layout_constraintTop_toBottomOf="@+id/imageView9" />
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="239dp"
+                android:layout_height="1dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:background="?android:attr/listDivider"
+                swipe:layout_constraintEnd_toEndOf="parent"
+                swipe:layout_constraintStart_toEndOf="@+id/servicesPic"
+                swipe:layout_constraintTop_toBottomOf="@+id/myServiceName" />
+
+            <TextView
+                android:id="@+id/myPoints"
+                android:layout_width="61dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="191dp"
+                android:layout_marginLeft="191dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="sans-serif-light"
+                android:letterSpacing="0.01"
+                android:lineSpacingExtra="-8.7sp"
+                android:text="30 point"
+                android:textColor="@color/goldenrod"
+                android:textSize="16.7sp"
+                android:textStyle="normal"
+                swipe:layout_constraintBottom_toBottomOf="parent"
+                swipe:layout_constraintEnd_toEndOf="parent"
+                swipe:layout_constraintStart_toEndOf="@+id/servicesPic"
+                swipe:layout_constraintTop_toBottomOf="@+id/divider" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </com.daimajia.swipe.SwipeLayout>
+
+</android.support.v7.widget.CardView>

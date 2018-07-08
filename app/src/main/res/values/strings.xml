@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Hat W Khod</string>
+    <string name="title_activity_login">LoginActivity</string>
+
+    <string name="facebook_app_id">182073279171205</string>
+    <string name="fb_login_protocol_scheme">fb182073279171205</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Guest</string>
+    <string name="nav_header_subtitle">Welcome to HWK</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="next_level">Next level requirement \n work 100 jops</string>
+
+    <!-- Dialog message when user is leaving editor but hasn't saved changes  -->
+    <string name="unsaved_changes_dialog_msg">Discard your changes and quit editing?</string>
+
+    <!-- Dialog button text for the option to discard a user's changes -->
+    <string name="discard">Discard</string>
+
+    <!-- Dialog button text for the option to keep editing the current Trip -->
+    <string name="keep_editing">Keep Editing</string>
+    <string name="external_storage">External storage</string>
+    <string name="permission_message">permission is necessary</string>
+    <string name="permission_denied">Permission Denied</string>
+
+</resources>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/myrquest_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/myrquest_image_background"
+        android:src="@drawable/myrquest_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/myrequest_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-light"
+        android:lineSpacingExtra="4.7sp"
+        android:text="Lorem Ipsum is simply dummy text of"
+        android:textColor="#444444"
+        android:textSize="11.7sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintStart_toEndOf="@+id/myrquest_image"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/request_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/request_type"
+        app:layout_constraintStart_toEndOf="@+id/myrquest_image"
+        app:layout_constraintTop_toBottomOf="@+id/myrequest_description" />
+
+    <TextView
+        android:id="@+id/text_request_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-light"
+        android:letterSpacing="0.01"
+        android:lineSpacingExtra="-5.3sp"
+        android:text="TextView"
+        android:textColor="@color/goldenrod"
+        android:textSize="13.3sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/request_type"
+        app:layout_constraintTop_toBottomOf="@+id/myrequest_description" />
+
+    <ImageView
+        android:id="@+id/number_of_offers_for_request"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/number_of_offers_for_request"
+        app:layout_constraintStart_toEndOf="@+id/myrquest_image"
+        app:layout_constraintTop_toBottomOf="@+id/request_type" />
+
+    <TextView
+        android:id="@+id/text_number_of_offers_for_request"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-light"
+        android:letterSpacing="0.01"
+        android:lineSpacingExtra="-5.3sp"
+        android:text="TextView"
+        android:textColor="@color/goldenrod"
+        android:textSize="13.3sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/number_of_offers_for_request"
+        app:layout_constraintTop_toBottomOf="@+id/text_request_type" />
+
+    <ImageView
+        android:id="@+id/request_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/request_date"
+        app:layout_constraintStart_toEndOf="@+id/myrquest_image"
+        app:layout_constraintTop_toBottomOf="@+id/number_of_offers_for_request" />
+
+    <TextView
+        android:id="@+id/text_request_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-light"
+        android:letterSpacing="0.01"
+        android:lineSpacingExtra="-5.3sp"
+        android:text="TextView"
+        android:textColor="@color/goldenrod"
+        android:textSize="13.3sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/request_date"
+        app:layout_constraintTop_toBottomOf="@+id/text_number_of_offers_for_request" />
+
+</android.support.constraint.ConstraintLayout>

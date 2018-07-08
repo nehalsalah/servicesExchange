@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group
+        android:id="@+id/for_top_section"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/MyStats"
+            android:icon="@drawable/my_stats"
+            android:title="My Stats" />
+
+        <item
+            android:id="@+id/Home"
+            android:icon="@drawable/navigation_home"
+            android:title="Home" />
+
+        <item
+            android:id="@+id/Inbox"
+            android:icon="@drawable/inbox"
+            android:title="Inbox" />
+
+        <item
+            android:id="@+id/Notification"
+            android:icon="@drawable/notifications"
+            android:title="Notification" />
+
+        <item
+            android:id="@+id/MyRequests"
+            android:icon="@drawable/request_type"
+            android:title="MyRequests" />
+    </group>
+
+    <group
+        android:id="@+id/for_online_status_section"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/OnlineStatus"
+            android:icon="@drawable/online_status"
+            android:title="OnlineStatus"
+            app:actionLayout="@layout/toggle_layout" />
+    </group>
+
+    <group
+        android:id="@+id/for_bottom_section"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/ManageService"
+            android:icon="@drawable/manage_service"
+            android:title="ManageService" />
+
+        <item
+            android:id="@+id/Earning"
+            android:icon="@drawable/earnings"
+            android:title="Earning" />
+
+        <item
+            android:id="@+id/MyService"
+            android:icon="@drawable/my_service"
+            android:title="MyService" />
+
+        <item
+            android:id="@+id/ServiceRequests"
+            android:icon="@drawable/services_requestes"
+            android:title="Service Requests" />
+
+        <item
+            android:id="@+id/ShareService"
+            android:icon="@drawable/share_services"
+            android:title="Offer Received" />
+
+        <item
+            android:id="@+id/Profile"
+            android:icon="@drawable/profile"
+            android:title="Profile" />
+
+        <item
+            android:id="@+id/Logout"
+            android:icon="@drawable/settings"
+            android:title="Logout" />
+    </group>
+</menu>

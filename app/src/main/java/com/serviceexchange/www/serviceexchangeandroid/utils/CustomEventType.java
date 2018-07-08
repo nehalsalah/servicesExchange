@@ -1,0 +1,43 @@
+package com.serviceexchange.www.serviceexchangeandroid.utils;
+
+public enum CustomEventType {
+    FACEBOOK_USER
+    , LINKEDIN_USER
+    , USER
+    , MAIN_CATEGORIES_LIST
+    , TOP_CATEGORIES_LIST
+    , OFFERED_SERVICES_FOR_CATEGORIES_LIST
+    , REQUESTED_SERVICES_FOR_CATEGORIES_LIST
+    , SUBCATEGORIES_LIST
+    , REVIEWS_FOR_SERVICES
+    , ALL_USER_TRANSACTION_CHATS
+    , ALL_TRANSACTION_MESSAGES
+    , MY_SERVICES_LIST
+    , REMOVE_SERVICE
+    , SEND_TRANSACTION_MESSAGES
+    , User_Statics
+    , User_Earning
+    , FILE_URL
+    , ADD_SERVICE
+    , GET_REQ
+    , ADD_REQ
+    , Get_All_Requst_On_Service
+    , ACTIVE_SERVICES_TRANS
+    , PENDING_SERVICES_TRANS
+    , COMPLETED_SERVICES_TRANS
+    , ALL_REQUEST_LIST
+    , STARTED_TRANS
+    , SERVER_TOKEN
+    , User_Accepted_Then_Accept_Transaction
+    , NULL_RESPONSE_BODY
+    , FAILED_REQUEST
+    , SUBMITTED_TRANS
+    , NOTIFICATION_MESSAGE
+    , User_OfferReceived
+    , APPROVED_TRANS
+    , LIST_OF_ORDERS
+    , CANCEL_TRANS
+    , updateUserData
+    , USER_REJECTED_TRANS
+    , Update_SERVICE
+}

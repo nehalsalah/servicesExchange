@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".homeforguestfragment.servicespercategoryactivity.ServicesForCategoryActivity"
+    android:id="@+id/serviceDetailFragmentContainer">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarForServicesActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="Services"
+        android:background="@color/goldenrod"
+        app:titleTextColor="#ffffff">
+
+    </android.support.v7.widget.Toolbar>
+
+    <!--<android.support.design.widget.TabLayout-->
+        <!--android:id="@+id/servicesTab"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/toolbarForServicesActivity" />-->
+
+    <!--<android.support.v4.view.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--android:id="@+id/servicesPager"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/servicesTab" />-->
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarForServicesActivity"
+        android:id="@+id/servicesForCategoryContainer">
+
+    </FrameLayout>
+
+</android.support.constraint.ConstraintLayout>

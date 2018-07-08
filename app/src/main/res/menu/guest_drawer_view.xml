@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/GuestHome"
+            android:icon="@drawable/guest_home"
+            android:title="Home" />
+
+        <item
+            android:id="@+id/JoinUs"
+            android:icon="@drawable/join_us"
+            android:title="Join Us" />
+
+        <item
+            android:id="@+id/About"
+            android:icon="@drawable/about"
+            android:title="About" />
+
+        <item
+            android:id="@+id/TermOfService"
+            android:icon="@drawable/term_of_service"
+            android:title="Term Of Service" />
+
+        <item
+            android:id="@+id/PolicyPrivacy"
+            android:icon="@drawable/policy_privacy"
+            android:title="Policy Privacy" />
+
+        <item
+            android:id="@+id/Support"
+            android:icon="@drawable/support"
+            android:title="Support" />
+
+    </group>
+</menu>
